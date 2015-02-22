@@ -17,18 +17,17 @@
 			$('taxamo-L').removeAttr("disabled");
 		} else {
 			console.log('no errors');
-			this.activateStripe(e);
+			checkServer(e);
 		}
 	};
 	
 	function checkServer(e){
 		console.log('commence prechecks');
-		var self = this;
 		var subscriberEmail = $('#registration_email').val();
 		var subscriberUserName = $('#registration_username').val();
 		var subscriberPassword = $('#registration_password').val();
 		
-		var subscriptionPlan = "Silver"; //Here you would update with the name of one of your Stripe plans
+		var subscriptionPlan = "silver"; //Here you would update with the name of one of your Stripe plans
 		
 		var querystring = "&email="+subscriberEmail+"&username="+subscriberUserName+"&password="+subscriberPassword;
 			
@@ -38,7 +37,7 @@
 				data: querystring,
 				
 				success: function (jqxhr, status, error){
-					self.taxamoWrapper(subscriptionPlan, subscriberUserName, subscriberEmail);
+					taxamoWrapper(subscriptionPlan, subscriberUserName, subscriberEmail);
 				}, 
 				error: function(jqxhr, status, error) {
 					$('#taxamo-L').removeAttr("disabled");
@@ -51,7 +50,7 @@
 		console.log('hit the taxamo function');
 		
 		//b2c_plan_id, b2b_plan_id, provider, resultHandler, options
-		Taxamo.doSubscriptionCheckout(subscriptionLevel, 'silver', 'stripe', //the second paramater is 'b2b plan' which is never used - set to a stripe plan to avoid errors
+		Taxamo.doSubscriptionCheckout(subscriptionPlan, 'silver', 'stripe', //the second paramater is 'b2b plan' which is never used - set to a stripe plan to avoid errors
 			function(data) { //success handler, you should place more complex logic here
 				console.log("Finished checkout:" + JSON.stringify(data, null, '\t'));
 				alert('Your Membership has been created! Please login');

@@ -16,7 +16,7 @@ __Setup Instructions__
 2. Install front end dependencies with bower (cd into 'site' folder and do bower install)
 3. Replace Stripe and Taxamo Public and Private keys with yours in the config file and in index.html
 4. Setup Stripe webhooks for Taxamo as explained here: http://www.taxamo.com/doc/payment_providers/braintree/subscriptions/
-5. Setup Stripe webhooks (in your Stripe dashboard) according to the webhooks route
+5. Setup Stripe webhooks (in your Stripe dashboard) according to the webhooks route - you may need to deploy your app to test the webhooks
 6. Run the server (node server.js)
 
 
@@ -28,3 +28,9 @@ __Solution Steps__
 2. If username/email is available, use the taxamo.js doSubscription function to create the subscription
 
 3. Update the app DB with additional user information using webhooks
+
+
+__Notes__
+
+*For any developers like me who live in China, you will need to use an advanced VPN like Astrill VPN dialer in order to access the Taxamo API.
+

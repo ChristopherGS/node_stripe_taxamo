@@ -1,13 +1,13 @@
 {
   "mongo": {
-    "url": "DB URI", 
+    "url": "mongodb://localhost/exampledb" 
   },
   "stripe":{
-	"secret": "YOUR PRIVATE KEY",
-	"publishable": "YOUR PUBLIC KEY"
+	"secret": "sk_test_kgWLqWfqHM1mfiuyXWOFUINf",
+	"publishable": "pk_test_cBtsxp6MaJkGYmhfpnWw7IP4"
   },
   "taxamo":{
-	"secret": "YOUR PRIVATE KEY",
-	"publishable": "YOUR PUBLIC KEY"
+	"secret": "priv_test_rmHJCMFhgrKQCJ0trSL8MqLbRzKfJkbBVRqpH2wjDtY",
+	"publishable": "public_test_knva10bIJShSFkvcjtHM-7qMN5WL5RGJFEm4xiewc98"
   }
 }

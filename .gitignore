@@ -16,3 +16,7 @@ node_modules
 
 site/bower_components
 
+config
+
+config/default.json
+

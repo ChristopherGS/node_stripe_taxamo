@@ -20,12 +20,12 @@ var controllers = require('./controllers');
 
 // __Stripe and Taxamo__
 
-var stripe = require('stripe')(/*your private stripe key goes here*/);
+var stripe = require('stripe')(config.stripe.secret);
 //taxamo
 var client = require('swagger-client');
 
 //replace "SamplePrivateTestKey1 with your private key from the taxamo dashboard
-client.authorizations.add("apiKey", new client.ApiKeyAuthorization("private_token", config.taxmo.secret, "query"));
+client.authorizations.add("apiKey", new client.ApiKeyAuthorization("private_token", config.taxamo.secret, "query"));
 
 // __DATABASE CONNECT__
 			
