@@ -1,0 +1,160 @@
+#createUserPage {
+	color: #636365;
+}
+
+
+#createUserPage .l-cell {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 2%;
+}
+
+#createUserPage form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+
+#createUserPage form p{
+	font-size: 1em;
+	margin: 0 0 5%;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+#createUserPage form label {
+	font: 1.4em "OpenSansBold",Helvetica,Arial,sans-serif;
+	margin: 0 0 2%;
+	text-transform: uppercase;
+	cursor: default;
+}
+
+#createUserPage form .errorMessage, #createUserPage form .userNameError, #createUserPage form .passwordError  {
+	text-transform: none;
+}
+
+#createUserPage form input {
+	margin: 0em;
+	font: -webkit-small-control;
+	color: initial;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+}
+
+#createUserPage form input[type="text"],#createUserPage form input[type="email"],#createUserPage form input[type="password"],#createUserPage form textarea { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #dcd7ce;
+	border: 0;
+	border-radius: 2px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.35),0 1px 0 #fff;
+	color: #565658;
+	font: 1.6em "OpenSansRegular",Helvetica,Arial,sans-serif;
+	padding: 7px;
+	width: 100%;
+
+}
+
+#createUserPage h1 {
+	font-size: 2em;
+	margin-bottom: 5%;
+	color: #000000;
+	text-align: center;
+}
+
+#createUserPage .l-cell--a {
+	max-width: 500px;
+}
+
+#createUserPage a {
+	border-bottom: 1px solid #a1ada7;
+	padding-bottom: 1px;
+	color: #606e67;
+	text-decoration: none;
+}
+
+#createUserPage .inline {
+	float: right;
+	font: 0.45em "OpenSansRegular",Helvetica,Arial,sans-serif;
+	letter-spacing: 0;
+	margin: 0;
+}
+
+.form--auth {
+	border-top: 0;
+	padding-top: 10%;
+}
+
+#createUserPage #sign-up-form {
+	background: #f6f5ed;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	border-radius: 3px;
+	display: block;
+	padding: 5%;
+}
+
+#createUserPage .form--auth .suggest {
+	margin: -10px 0 15px;
+}
+
+#createUserPage #suggestHide {
+	display: none;
+}
+
+#createUserPage .1-hide p a{
+	border-bottom: 1px solid #a1ada7;
+	padding-bottom: 1px;
+}
+
+#createUserPage .1-hide {
+	display: none;
+}
+
+#createUserPage .form--auth .submit {
+  padding: 5% 0 0;
+}
+
+#createUserPage .form--auth .submit .btn-a {
+	display: block;
+	margin: 2% auto 10% auto;
+}
+
+#createUserPage .form--auth .btn-a {
+	background: #288b9a;
+	color: #fff;
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+	font: 1.5em "OpenSansBold",Helvetica,Arial,sans-serif;
+	padding: 6% 12%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#createUserPage .form--auth .taxamo {
+	width: 90%;
+	margin: 5% auto 1%;
+	text-align: center;
+}
+
+#createUserPage .form--auth .btn-a:hover, #createUserPage .btn-a:focus {
+	background: #237986;
+	color: #fff;
+}
+
+#createUserPage .form--auth .submit .btn-a.loginSpace {
+	margin: 7% auto 10% auto;
+  }

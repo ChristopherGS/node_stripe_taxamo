@@ -1,0 +1,13 @@
+{
+  "mongo": {
+    "url": "DB URI", 
+  },
+  "stripe":{
+	"secret": "YOUR PRIVATE KEY",
+	"publishable": "YOUR PUBLIC KEY"
+  },
+  "taxamo":{
+	"secret": "YOUR PRIVATE KEY",
+	"publishable": "YOUR PUBLIC KEY"
+  }
+}

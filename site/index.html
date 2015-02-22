@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Example Node-Stripe-Taxamo Setup</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="bower_components/modernizr/modernizr.js"></script>
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		
+		 <!-- The required Stripe lib -->
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+		
+		
+		<!-- The required Taxamo.js lib -->
+		<script type="text/javascript" src="https://api.taxamo.com/js/v1/taxamo.all.nojquery.js">
+		</script>
+		
+		<script type="text/javascript">
+			// This identifies your website in the createToken call below
+			Stripe.setPublishableKey(/*YOUR STRIPE PUBLIC KEY GOES HERE*/);
+			
+			Taxamo.initialize('SamplePublicTestKey1'); //replace 'SamplePublicTestKey1' with your Taxamo token
+	
+		</script>
+		
+    </head>
+    <body>
+        <!-- Add your site or application content here -->
+		<div class="container">
+			<div id="createUserPage" class="row">
+				<div class="col-xs-12">
+					<h1 class="center">Node-Stripe-Taxamo Example Setup</h1>
+					<div class="row l-cell l-cell--a">
+			
+						<div class='form--auth l-card--a' id='sign-up-form'>			
+								<form id="createNewUserForm">
+									<p>
+									<label data-required="true" for="regisration_email">Your email address</label><label class="emailError"></label><input id="registration_email" size="30" type="email" value="" required placeholder="Enter a valid email address">
+									</p>
+
+									<p>
+									<label for="registration_username">Choose a username</label><label class="userNameError"></label><input id="registration_username" size="30" type="text" required >
+									</p>
+
+									<p>
+									<label data-required="true" for="user_password">Choose a password</label><label class="passwordError"></label><input id="registration_password" size="30" type="password" required placeholder="Minimum 6 characters">
+									</p>
+									
+									<p>
+									<label data-required="true" for="user_password_retype">Retype your password</label><label class="passwordError"></label><input id="registration_password_retype" size="30" type="password" required placeholder="Minimum 6 characters">
+									</p>
+									
+									
+									<div class='taxamo'>
+										<input id="taxamo-L" class="btn-a" data-disable-with="Creating…" type="submit" value="Enter Card Details"/>
+									</div>
+							</form>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!--close container-->
+	
+	
+    <script src="js/main.js"></script>
+
+    </body>
+</html>
